@@ -1,0 +1,34 @@
+print("\n\n")
+print("\tLuck choosing game")
+
+
+a = 6
+b = int(input("\nEnter the special number to win: "))
+
+if b == a:
+     print("\nyouuuuuuuuuuu wwwwwwiiiiiiiinnnnnnn!!!!!!!!!")
+else:
+     print("\nyou loooooooooooooooosee")
+     
+
+color = int(input("\nSelect a number between 0 to 7 get your lucky color: "))
+
+#there is different code for various colors         #"\033[1;"                    
+if color == 0 :
+    print("\033[1;30;40m your color is gray\n")
+elif color == 1 :
+    print("\033[1;31;40m your color is red\n")
+elif color == 2 :
+    print("\033[1;32;40m your color is green\n")
+elif color == 3 :
+   print("\033[1;33;40m your color is yellow\n")
+elif color == 4 :
+   print("\033[1;34;40m your color is blue\n")
+elif color == 5 :
+   print("\033[1;35;40m your color is magenta\n")
+elif color == 6 :
+   print("\033[1;36;40m your color is cyan\n")
+elif color == 7 :
+   print("\033[1;37;40m your color is white\n")
+else :
+   print("\nyou chose a wrong number!!!")
